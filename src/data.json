@@ -1,0 +1,52 @@
+{
+  "header": "Heading123",
+  "subheader": "subHeading123",
+  "cards": [
+    {
+      "id": "1",
+      "header": "something1",
+      "text": "abc",
+      "icon": "___",
+      "cards": [
+        {
+          "id": "1",
+          "header": "something2",
+          "text": "abc",
+          "icon": "___",
+          "hyperlink": "www.google.com"
+        },
+        {
+          "id": "2",
+          "header": "something2",
+          "text": "abc",
+          "icon": "___",
+          "hyperlink": "www.google.com"
+        }
+      ],
+      "hyperlink": ""
+    },
+    {
+      "id": "2",
+      "header": "something1",
+      "text": "abc",
+      "icon": "___",
+      "cards": [
+        {
+          "id": "1",
+          "header": "something3",
+          "text": "abc",
+          "icon": "___",
+          "hyperlink": "www.google.com"
+        },
+        {
+          "id": "2",
+          "header": "something3",
+          "text": "abc",
+          "icon": "___",
+          "hyperlink": "www.google.com"
+        }
+      ],
+      "hyperlink": "www.google.com"
+    }
+  ]
+}
