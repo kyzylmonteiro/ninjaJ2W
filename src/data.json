@@ -65,7 +65,7 @@
       "hyperlink": "www.google.com"
     },
     {
-      "id": "2",
+      "id": "3",
       "header": "level1card2",
       "text": "abc",
       "icon": "___",
@@ -88,30 +88,7 @@
       "hyperlink": "www.google.com"
     },
     {
-      "id": "2",
-      "header": "level1card2",
-      "text": "abc",
-      "icon": "___",
-      "cards": [
-        {
-          "id": "1",
-          "header": "level1card2card1",
-          "text": "abc",
-          "icon": "___",
-          "hyperlink": "www.google.com"
-        },
-        {
-          "id": "2",
-          "header": "level1card2card2",
-          "text": "abc",
-          "icon": "___",
-          "hyperlink": "www.google.com"
-        }
-      ],
-      "hyperlink": "www.google.com"
-    },
-    {
-      "id": "2",
+      "id": "4",
       "header": "level1card2",
       "text": "abc",
       "icon": "___",

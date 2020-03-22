@@ -3,29 +3,43 @@ import { Card, CardActions, CardContent } from "@material-ui/core";
 import { Button, Typography } from "@material-ui/core";
 
 const stylez = {
-  app: {
-    backgroundColor: "lightgrey",
-    height: "100%",
-    margin: "0"
-  },
   card: {
     margin: "10px",
-    width: 275,
-    float: "left",
+    width: "300px",
+    // float: "left",
+    display: "inline-block",
+    top: "0",
     textAlign: "centre"
   },
-  cardSection: {
+  breadcrumb: {
     width: "100vw",
-    height: "65vh",
-    textAlign: "centre",
+    position: "sticky",
+    top: "0",
+    backgroundColor: "white"
+  },
+  cardSection: {},
+  cardList: {
+    backgroundColor: "lightgrey",
+    marginLeft: "3%",
+    marginBottom: "50px",
+    width: "95%",
+    borderRadius: "5px",
     overflowY: "scroll"
   },
-  buttonSet: {
+  detailButton: {
     float: "right"
+  },
+  backButtonSection: {
+    backgroundColor: "white",
+    position: "fixed",
+    bottom: "0px",
+    width: "100vw",
+    padding: "5px",
+    height: "40px"
   }
 };
 
-class CardList extends React.Component {
+class CardSection extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -70,16 +84,16 @@ class CardList extends React.Component {
           </Typography>
           {card.text}
         </CardContent>
-        <CardActions style={stylez.buttonSet}>
+        <CardActions style={stylez.detailButton}>
           {card.cards ? (
             <Button onClick={() => this.onDetailsClicked(card)}>Details</Button>
           ) : (
-            <Button variant="disabled">Details</Button>
+            <Button disabled>Details</Button>
           )}
         </CardActions>
       </Card>
     ));
-    return <div style={stylez.cardSection}>{cardsList}</div>;
+    return <>{cardsList}</>;
   }
   generatebreadcrumb() {
     const breadcrumb = this.state.breadcrumb.map(brdC => (
@@ -95,20 +109,30 @@ class CardList extends React.Component {
         {">"}
       </>
     ));
-    return <div>{breadcrumb}</div>;
+    return <>{breadcrumb}</>;
   }
   render() {
     return (
-      <div>
-        {this.generatebreadcrumb()}
-        <div>{this.generateCardsList(this.state.cards)}</div>
-        {this.state.breadcrumb.length > 1 ? (
-          <Button onClick={() => this.onBackClicked()}>Back</Button>
-        ) : (
-          <Button variant="disabled">Back</Button>
-        )}
+      <div style={stylez.cardSection}>
+        <div style={stylez.breadcrumb}>{this.generatebreadcrumb()}</div>
+        <div style={stylez.cardList}>
+          {this.generateCardsList(this.state.cards)}
+        </div>
+        <div style={stylez.backButtonSection}>
+          {this.state.breadcrumb.length > 1 ? (
+            <Button
+              variant="outlined"
+              color="primary"
+              onClick={() => this.onBackClicked()}
+            >
+              Back
+            </Button>
+          ) : (
+            <Button variant="disabled">Back</Button>
+          )}
+        </div>
       </div>
     );
   }
 }
-export default CardList;
+export default CardSection;

@@ -1,20 +1,20 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
-import CardList from "./CardList";
+import CardSection from "./CardSection";
 
 const useStyles = makeStyles({
-  root: {
-    color: "red"
-  },
+  root: {},
   app: {
-    backgroundColor: "lightgrey",
+    backgroundColor: "white",
     height: "100vh",
+    width: "100vw",
     textAlign: "center"
   },
   cardsSection: {
-    marginTop: "35px"
-  }
+    width: "100vw"
+  },
+  notCardSection: {}
 });
 
 function App(props) {
@@ -24,10 +24,12 @@ function App(props) {
   return (
     <div className="App">
       <div className={stylez.app}>
-        <Typography variant="h2">{data.header}</Typography>
-        <Typography variant="h5">{data.subheader}</Typography>
+        <div className={stylez.notCardSection}>
+          <Typography variant="h3">{data.header}</Typography>
+          <Typography variant="h6">{data.subheader}</Typography>
+        </div>
         <div className={stylez.cardsSection}>
-          <CardList cards={cards} breadcrumb={data.header}></CardList>
+          <CardSection cards={cards} breadcrumb={data.header}></CardSection>
         </div>
       </div>
     </div>
