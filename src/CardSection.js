@@ -1,6 +1,8 @@
 import React from "react";
 import { Card, CardActions, CardContent } from "@material-ui/core";
 import { Button, Typography } from "@material-ui/core";
+import Avatar from "@material-ui/core/Avatar";
+import AssignmentIcon from "@material-ui/icons/Assignment";
 
 const stylez = {
   card: {
@@ -25,6 +27,14 @@ const stylez = {
     width: "95%",
     borderRadius: "5px",
     overflowY: "scroll"
+  },
+  cardText: {
+    height: "100px",
+    overflow: "scroll",
+    width: "100%"
+  },
+  cardIcon: {
+    float: "left"
   },
   detailButton: {
     float: "right"
@@ -78,11 +88,16 @@ class CardSection extends React.Component {
     const cardsList = cards.map(card => (
       <Card style={stylez.card} key={card.id} align="center">
         <CardContent>
+          <Avatar style={stylez.cardIcon} variant="rounded">
+            <AssignmentIcon />
+          </Avatar>
           <Typography variant="h6">
             {card.header}
             {card.id}
           </Typography>
-          {card.text}
+          <Typography style={stylez.cardText} variant="body1">
+            {card.text}
+          </Typography>
         </CardContent>
         <CardActions style={stylez.detailButton}>
           {card.cards ? (
