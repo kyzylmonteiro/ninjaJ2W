@@ -27,7 +27,7 @@ function App(props) {
         <Typography variant="h2">{data.header}</Typography>
         <Typography variant="h5">{data.subheader}</Typography>
         <div className={stylez.cardsSection}>
-          <CardList cards={cards}></CardList>
+          <CardList cards={cards} breadcrumb={data.header}></CardList>
         </div>
       </div>
     </div>
