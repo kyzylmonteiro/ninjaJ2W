@@ -26,11 +26,11 @@ const stylez = {
     marginBottom: "50px",
     width: "95%",
     borderRadius: "5px",
-    overflowY: "scroll"
+    overflowY: "auto"
   },
   cardText: {
     height: "100px",
-    overflow: "scroll",
+    overflow: "auto",
     width: "100%"
   },
   cardIcon: {
@@ -84,6 +84,9 @@ class CardSection extends React.Component {
       this.state.links.pop();
     }
   }
+  openThisLink(hyperlink) {
+    window.open(hyperlink, "_blank");
+  }
   generateCardsList(cards) {
     const cardsList = cards.map(card => (
       <Card style={stylez.card} key={card.id} align="center">
@@ -100,6 +103,14 @@ class CardSection extends React.Component {
           </Typography>
         </CardContent>
         <CardActions style={stylez.detailButton}>
+          {card.hyperlinkText ? (
+            <Button onClick={this.openThisLink.bind(this, card.hyperlink)}>
+              {card.hyperlinkText}
+            </Button>
+          ) : (
+            <Button disabled>Link</Button>
+          )}
+
           {card.cards ? (
             <Button onClick={() => this.onDetailsClicked(card)}>Details</Button>
           ) : (

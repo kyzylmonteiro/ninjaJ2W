@@ -13,7 +13,8 @@
           "header": "level2card1card1",
           "text": "abc",
           "icon": "___",
-          "hyperlink": "www.google.com"
+          "hyperlink": "./abc.pdf",
+          "hyperlinkText": "important document"
         },
         {
           "id": "2",
@@ -39,7 +40,8 @@
           "hyperlink": "www.google.com"
         }
       ],
-      "hyperlink": ""
+      "hyperlink": "./abc2.txt",
+      "hyperlinkText": "./abc2.txt"
     },
     {
       "id": "2",
