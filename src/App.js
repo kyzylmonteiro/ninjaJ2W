@@ -1,19 +1,19 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Card, CardActions, CardContent } from "@material-ui/core";
-import Button from "@material-ui/core/Button";
+import { Typography } from "@material-ui/core";
+import CardList from "./CardList";
 
 const useStyles = makeStyles({
+  root: {
+    color: "red"
+  },
   app: {
     backgroundColor: "lightgrey",
-    height: "100%"
+    height: "100vh",
+    textAlign: "center"
   },
-  card: {
-    marginRight: "10px",
-    marginLeft: "10px",
-    width: 275,
-    float: "left",
-    textAlign: "centre"
+  cardsSection: {
+    marginTop: "35px"
   }
 });
 
@@ -21,28 +21,15 @@ function App(props) {
   const stylez = useStyles();
   let data = props.data;
   let cards = data.cards;
-
-  var cardsList = cards.map(card => (
-    <Card className={stylez.card} key={card.id}>
-      <CardContent>
-        <h4>
-          {card.header}
-          {card.id}
-        </h4>
-        {card.text}
-        <div>Details</div>
-      </CardContent>
-      <CardActions>
-        <Button>Back</Button>
-      </CardActions>
-    </Card>
-  ));
-
   return (
-    <div className="App" className={stylez.app}>
-      <h1>{data.header}</h1>
-      <h3>{data.subheader}</h3>
-      {cardsList}
+    <div className="App">
+      <div className={stylez.app}>
+        <Typography variant="h2">{data.header}</Typography>
+        <Typography variant="h5">{data.subheader}</Typography>
+        <div className={stylez.cardsSection}>
+          <CardList cards={cards}></CardList>
+        </div>
+      </div>
     </div>
   );
 }
