@@ -1,4 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Description
+Creating a card deck front end from a JSON file.
+
+
+# Features
+## Present Features of frontend
+- Header
+- SubHeader
+- Breadcrumbs
+- Card Components
+  - Icon 
+  - Header
+  - Text
+  - Hyperlink
+  - Details (deeper layer cards)
+  
+ ## Potential Features
+ - Card Components
+   - Images
+
+# Use Cases
+For easy updation of a webpage with
+- Announcements
+- News
+- etc.
+
+
+# Project Deployment
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [Material UI](https://material-ui.com/).
 
 ## Available Scripts
 
