@@ -1,37 +1,45 @@
 # Description
+
 A card deck front end from a JSON file.
 
-
 # Features
+
 ## Present Features of frontend
+
 - Header
 - SubHeader
 - Breadcrumbs
 - Card Components
-  - Icon 
+
+  - Icon
   - Header
   - Text
   - Hyperlink
   - Details (deeper layer cards)
-  
- ## Potential Features
- - Card Components
-   - Images
+
+## Potential Features
+
+- Card Components
+  - Images
 
 # Use Cases
+
 For easy updation of a webpage with
+
 - Announcements
 - News
 - etc.
-
 
 # Project Deployment
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and [Material UI](https://material-ui.com/).
 
+change homepage url in package.json to deploy it to another url and then run `npm run deploy`
+
 ## Install Project
 
 ### `npm install`
+
 Installs all dependencies of the project as mentioned in package.json, then run any script given below.
 
 ## Available Scripts
