@@ -1,6 +1,12 @@
 # Description
 
 A card deck front end from a JSON file.
+Idea is to update your dashboard with just updating a json file.
+
+# Demo
+
+json file used: [data.json](https://github.com/kyzylmonteiro/ninjaJ2W/blob/master/src/data.json)
+Demo: [ninjaJ2W Demo](https://kyzylmonteiro.github.io/ninjaJ2W)
 
 # Features
 
