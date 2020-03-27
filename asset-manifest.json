@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/ninjaJ2W/static/js/main.5ae0ec63.chunk.js",
+    "main.js.map": "/ninjaJ2W/static/js/main.5ae0ec63.chunk.js.map",
+    "runtime-main.js": "/ninjaJ2W/static/js/runtime-main.b31f058a.js",
+    "runtime-main.js.map": "/ninjaJ2W/static/js/runtime-main.b31f058a.js.map",
+    "static/css/2.0d6a133c.chunk.css": "/ninjaJ2W/static/css/2.0d6a133c.chunk.css",
+    "static/js/2.ec310aab.chunk.js": "/ninjaJ2W/static/js/2.ec310aab.chunk.js",
+    "static/js/2.ec310aab.chunk.js.map": "/ninjaJ2W/static/js/2.ec310aab.chunk.js.map",
+    "index.html": "/ninjaJ2W/index.html",
+    "precache-manifest.3a6d54058c6c0b57dd9e343f71eb9b1b.js": "/ninjaJ2W/precache-manifest.3a6d54058c6c0b57dd9e343f71eb9b1b.js",
+    "service-worker.js": "/ninjaJ2W/service-worker.js",
+    "static/css/2.0d6a133c.chunk.css.map": "/ninjaJ2W/static/css/2.0d6a133c.chunk.css.map",
+    "static/js/2.ec310aab.chunk.js.LICENSE.txt": "/ninjaJ2W/static/js/2.ec310aab.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/ninjaJ2W/static/media/roboto-latin-900italic.ebf6d164.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b31f058a.js",
+    "static/css/2.0d6a133c.chunk.css",
+    "static/js/2.ec310aab.chunk.js",
+    "static/js/main.5ae0ec63.chunk.js"
+  ]
+}
